@@ -24,22 +24,33 @@ def calculate_units(days_and_unit_dictionary):
         elif user_input_number_of_days == 0:
             print("you entered a 0! Please enter a valid positive number!")
         else:
-            print(f"You entered a negative number: '{user_input_number_of_days}'! Please enter a valid positive number!")
+            print(
+                f"You entered a negative number: '{user_input_number_of_days}'! Please enter a valid positive number!"
+            )
 
     except ValueError:
-        print(f"Your input: '{days_and_unit_dictionary['days']}', is not a valid number!")
+        print(
+            f"Your input: '{days_and_unit_dictionary['days']}', is not a valid number!"
+        )
 
 
 # A loop to accept a list of 'days:unit' elements as the input from user and calculate units per day for each member of that list, until the user enters "exit"
-user_input = input("Enter a comma separated list of 'days:unit' elements and I will convert each element's 'days' to its equivalent 'unit's!\n")
+user_input = input(
+    "Enter a comma separated list of 'days:unit' elements and I will convert each element's 'days' to its equivalent 'unit's!\n"
+)
 while user_input != "exit":
     for key_value_entry in set(user_input.split(", ")):
         try:
             days_and_unit = key_value_entry.split(":")
-            days_and_unit_dictionary = {"days": days_and_unit[0], "unit": days_and_unit[1]}
+            days_and_unit_dictionary = {
+                "days": days_and_unit[0],
+                "unit": days_and_unit[1],
+            }
             calculate_units(days_and_unit_dictionary)
-        
+
         except IndexError:
             print("Error(s) found in the input format, please double check!")
 
-    user_input = input("Enter a comma separated list of 'days:unit' elements and I will convert each element's 'days' to its equivalent 'unit's!\n")
+    user_input = input(
+        "Enter a comma separated list of 'days:unit' elements and I will convert each element's 'days' to its equivalent 'unit's!\n"
+    )
