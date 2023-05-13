@@ -20,14 +20,14 @@ case _:
 Prints 'Any other color!' if mycolor does not match any other case.
 """
 
-mycolor = 'Yellow'
+mycolor = "Yellow"
 
 match mycolor.lower():
-    case 'blue':
-        print('Blue')
-    case 'green':
-        print('Green')
-    case 'yellow':
-        print('Yellow')
+    case "blue":
+        print("Blue")
+    case "green":
+        print("Green")
+    case "yellow":
+        print("Yellow")
     case _:
-        print('Any other color!')
+        print("Any other color!")
