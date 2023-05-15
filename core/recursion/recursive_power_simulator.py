@@ -30,6 +30,7 @@ def recursive_power_simulator(value, number):
     else:
         return value * recursive_power_simulator(value, number - 1)
 
+
 # OR even better, using the following code which gives us O(log(n)) time complexity:
 # def recursive_power_simulator(value, number):
 #     if number == 0:

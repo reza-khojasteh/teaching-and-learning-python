@@ -39,6 +39,7 @@ def is_palindrome(word):
             return check_two_sides(left + 1, right - 1)
         # General case: if the letters at the left and right indices are different,
         return False
+
     # Call the recursive function with the left and right indices.
     return check_two_sides(0, len(word) - 1)
 

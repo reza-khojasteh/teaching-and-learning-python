@@ -32,4 +32,4 @@ def hanoi(f, s, t, n):
 
 
 # test
-hanoi('f', 's', 't', 3)
+hanoi("f", "s", "t", 3)
