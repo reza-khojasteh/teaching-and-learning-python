@@ -55,12 +55,12 @@ class TestLinearSearch(unittest.TestCase):
         self.assertEqual(linear_search(list, 5.5), 4)
 
     def test_list_with_strings(self):
-        list = ['a', 'b', 'c', 'd', 'e']
-        self.assertEqual(linear_search(list, 'a'), 0)
-        self.assertEqual(linear_search(list, 'b'), 1)
-        self.assertEqual(linear_search(list, 'c'), 2)
-        self.assertEqual(linear_search(list, 'd'), 3)
-        self.assertEqual(linear_search(list, 'e'), 4)
+        list = ["a", "b", "c", "d", "e"]
+        self.assertEqual(linear_search(list, "a"), 0)
+        self.assertEqual(linear_search(list, "b"), 1)
+        self.assertEqual(linear_search(list, "c"), 2)
+        self.assertEqual(linear_search(list, "d"), 3)
+        self.assertEqual(linear_search(list, "e"), 4)
 
     def test_best_case(self):
         list = [1, 2, 3, 4, 5]
@@ -75,5 +75,5 @@ class TestLinearSearch(unittest.TestCase):
         self.assertEqual(linear_search(list, 3), 2)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()
