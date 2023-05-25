@@ -39,8 +39,9 @@ def merge_sort(mylist):
     empty_list = [0] * len(mylist)
     # is more efficient than repeatedly creating it when merging
 
-    recursive_merge_sort(mylist, 0, len(mylist) - 1,
-                         empty_list)  # call recursive mergesort
+    recursive_merge_sort(
+        mylist, 0, len(mylist) - 1, empty_list
+    )  # call recursive mergesort
 
 
 def recursive_merge_sort(mylist, first_index, last_index, empty_list):
@@ -63,6 +64,7 @@ def recursive_merge_sort(mylist, first_index, last_index, empty_list):
 # this function will merge them together using empty_list as temporary storage
 # once it is merged together, it is copied back into mylist, creating a single
 # sorted segment that starts at a_first_index to b_last_index (inclusive)
+
 
 def merge(mylist, a_first_index, b_first_index, b_last_index, empty_list):
     a_ptr = a_first_index  # used to track value from a

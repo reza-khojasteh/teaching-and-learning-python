@@ -48,9 +48,9 @@ class TestquickSort(unittest.TestCase):
         self.assertEqual(list, [1.1, 2.2, 3.3, 4.4, 5.5])
 
     def test_list_with_strings(self):
-        list = ['a', 'b', 'c', 'd', 'e']
+        list = ["a", "b", "c", "d", "e"]
         quick_sort(list)
-        self.assertEqual(list, ['a', 'b', 'c', 'd', 'e'])
+        self.assertEqual(list, ["a", "b", "c", "d", "e"])
 
     def test_best_case(self):
         list = [1, 2, 3, 4, 5]
@@ -68,5 +68,5 @@ class TestquickSort(unittest.TestCase):
         self.assertEqual(list, [1, 2, 3, 4, 5])
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

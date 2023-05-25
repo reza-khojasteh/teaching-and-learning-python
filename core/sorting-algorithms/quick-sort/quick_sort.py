@@ -98,8 +98,10 @@ def partition(mylist, left, right):
             mylist[end_of_smaller], mylist[j] = mylist[j], mylist[end_of_smaller]
 
     # restore the pivot
-    mylist[end_of_smaller +
-           1], mylist[right] = mylist[right], mylist[end_of_smaller + 1]
+    mylist[end_of_smaller + 1], mylist[right] = (
+        mylist[right],
+        mylist[end_of_smaller + 1],
+    )
 
     # and return its location
     return end_of_smaller + 1

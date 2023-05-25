@@ -2,6 +2,7 @@
 # Date: 2023-01-23
 # Description: A simple program to sort a list of numbers using the insertion sort algorithm with O(n^2) for the worst case scenario
 
+
 def insertion_sort(my_list):
     n = len(my_list)
     for i in range(1, n):

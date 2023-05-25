@@ -38,5 +38,6 @@ for laureate in laureates:
         print((born_date))
         # Calculate and print Einstein's age when he received the prize
         print(
-            f"(Roughly) Age at which they received the prize: {year_date.year - born_date.year}")
+            f"(Roughly) Age at which they received the prize: {year_date.year - born_date.year}"
+        )
         break
