@@ -1,4 +1,5 @@
 """
+Author: Reza Khojasteh
 Performs a linear search on the list my_list for the key.
 
 Parameters: 
