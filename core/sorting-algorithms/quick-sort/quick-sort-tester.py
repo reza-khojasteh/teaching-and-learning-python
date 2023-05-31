@@ -11,7 +11,7 @@ import unittest
 from quick_sort import quick_sort
 
 
-class TestquickSort(unittest.TestCase):
+class TestQuickSort(unittest.TestCase):
     def test_empty_list(self):
         list = []
         quick_sort(list)
