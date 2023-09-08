@@ -41,6 +41,9 @@ print(sample_string[0:12])
 print(sample_string[0:100])
 # Prints Hello World
 
+print(sample_string[0:])
+# Prints Hello World
+
 print(sample_string[-11:-1])
 # Prints Hello Worl
 
