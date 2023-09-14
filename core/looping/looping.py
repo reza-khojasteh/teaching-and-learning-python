@@ -1,7 +1,6 @@
 """
 Loops through lists of names and ages using various looping constructs.
 
-Parameters:
 NAMES (list): A list of names.
 AGES (list): A list of ages corresponding to the names.
 
