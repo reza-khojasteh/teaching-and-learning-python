@@ -1,7 +1,6 @@
 """
 Prints a greeting using two different string formatting methods.
 
-Parameters:
 name (str): The name to use in the greeting.
 
 formatted_1 (str): Uses f-string formatting to insert the name into the greeting string.
