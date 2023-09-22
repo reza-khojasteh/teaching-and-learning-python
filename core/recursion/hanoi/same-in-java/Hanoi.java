@@ -6,6 +6,7 @@ public class Hanoi {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         hanoi(n, 'A', 'B', 'C');
+        sc.close();
     }
 
     public static void hanoi(int n, char from, char to, char aux) {
