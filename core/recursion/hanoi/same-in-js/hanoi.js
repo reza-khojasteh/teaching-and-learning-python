@@ -1,11 +1,10 @@
 // hanoi towers in js
-
-function hanoi(n, a, b, c) {
+function hanoi(f, s, t, n) {
     if (n > 0) {
-        hanoi(n - 1, a, c, b);
-        console.log(`move ${a} to ${c}`);
-        hanoi(n - 1, b, a, c);
+        hanoi(f, t, s, n - 1);
+        console.log(`${f} -> ${t}`);
+        hanoi(s, f, t, n - 1);
     }
 }
 
-hanoi(3, 'a', 'b', 'c');
+hanoi('f', 's', 't', 3);
