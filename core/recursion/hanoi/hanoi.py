@@ -31,5 +31,6 @@ def hanoi(f, s, t, n):
         hanoi(s, f, t, n - 1)
 
 
-# test
-hanoi("f", "s", "t", 3)
+# take some input from the user
+n = int(input("Enter the number of disks: "))
+hanoi("f", "s", "t", n)
