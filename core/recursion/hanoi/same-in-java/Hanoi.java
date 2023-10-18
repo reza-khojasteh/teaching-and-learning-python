@@ -18,23 +18,24 @@ public class Hanoi {
     // n (int): Number of disks
 
     // Functionality:
-    // Moves n disks from rod f to rod t using rod s.
+    // Moves n disks from rod f to rod t using rod s (disk no. 1 is the topmost
+    // disk)
     // If n <= 0, returns.
     // If n == 1, prints the move from f to t.
     // Otherwise:
-    // - Moves n-1 disks from f to s using t.
+    // - Moves the top n-1 disks from f to s using t.
     // - Prints the move from f to t.
-    // - Moves n-1 disks from s to t using f.
+    // - Moves all the n-1 disks from s to t using f.
     public static void hanoi(char f, char s, char t, int n) {
         // Base case(s)
         if (n <= 0)
             return;
         if (n == 1)
-            System.out.println(f + " -> " + t);
+            System.out.printf("Move disk %d from %c to %c\n", n, f, t);
         // recursive case:
         else {
             hanoi(f, t, s, n - 1);
-            System.out.println(f + " -> " + t);
+            System.out.printf("Move disk %d from %c to %c\n", n, f, t);
             hanoi(s, f, t, n - 1);
         }
     }
