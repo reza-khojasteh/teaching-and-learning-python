@@ -18,8 +18,7 @@ public class Hanoi {
     // n (int): Number of disks
 
     // Functionality:
-    // Moves n disks from rod f to rod t using rod s (disk no. 1 is the topmost
-    // disk)
+    // Moves n disks from rod f to rod t using rod s (disk no. 1 is the topmost disk)
     // If n <= 0, returns.
     // If n == 1, prints the move from f to t.
     // Otherwise:
