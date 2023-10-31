@@ -24,11 +24,11 @@ def hanoi(f, s, t, n):
         return
     if n == 1:
         print(f"Move disk {n} from {f} to {t}")
-    # recursive case
-    else:
-        hanoi(f, t, s, n - 1)
-        print(f"Move disk {n} from {f} to {t}")
-        hanoi(s, f, t, n - 1)
+        return
+    # (else) recursive case
+    hanoi(f, t, s, n - 1)
+    print(f"Move disk {n} from {f} to {t}")
+    hanoi(s, f, t, n - 1)
 
 
 # take some input from the user
