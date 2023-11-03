@@ -29,13 +29,13 @@ public class Hanoi {
         // Base case(s)
         if (n <= 0)
             return;
-        if (n == 1)
+        if (n == 1) {
             System.out.printf("Move disk %d from %c to %c\n", n, f, t);
-        // recursive case:
-        else {
-            hanoi(f, t, s, n - 1);
-            System.out.printf("Move disk %d from %c to %c\n", n, f, t);
-            hanoi(s, f, t, n - 1);
+            return;
         }
+        // recursive case:
+        hanoi(f, t, s, n - 1);
+        System.out.printf("Move disk %d from %c to %c\n", n, f, t);
+        hanoi(s, f, t, n - 1);
     }
 }
