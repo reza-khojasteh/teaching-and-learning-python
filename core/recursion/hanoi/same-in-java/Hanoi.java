@@ -3,14 +3,6 @@
 import java.util.Scanner;
 
 public class Hanoi {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the number of disks: ");
-        int n = sc.nextInt();
-        hanoi('f', 's', 't', n);
-        sc.close();
-    }
-
     // Parameters:
     // f (str): Starting rod
     // s (str): Spare rod
@@ -18,7 +10,8 @@ public class Hanoi {
     // n (int): Number of disks
 
     // Functionality:
-    // Moves n disks from rod f to rod t using rod s (disk no. 1 is the topmost disk)
+    // Moves n disks from rod f to rod t using rod s (disk no. 1 is the topmost
+    // disk)
     // If n <= 0, returns.
     // If n == 1, prints the move from f to t.
     // Otherwise:
@@ -37,5 +30,13 @@ public class Hanoi {
         hanoi(f, t, s, n - 1);
         System.out.printf("Move disk %d from %c to %c\n", n, f, t);
         hanoi(s, f, t, n - 1);
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number of disks: ");
+        int n = sc.nextInt();
+        hanoi('f', 's', 't', n);
+        sc.close();
     }
 }
