@@ -1,4 +1,3 @@
-
 // Recursive solution to the Towers of Hanoi problem.
 import java.util.Scanner;
 
