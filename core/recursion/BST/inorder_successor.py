@@ -71,34 +71,34 @@ class BST:
             print(curr.data, end=" ")
 
     # BST's (wrapped) recursive search function
-    def r_search(self, data, subtree):
+    def wrapped_recursive_search(self, data, subtree):
         if subtree is None:
             return None
         else:
             if data < subtree.data:
-                return self.r_search(data, subtree.left)
+                return self.wrapped_recursive_search(data, subtree.left)
             elif data > subtree.data:
-                return self.r_search(data, subtree.right)
+                return self.wrapped_recursive_search(data, subtree.right)
             else:
                 return subtree
 
     # BST's (wrapper) recursive search function
-    def search_recursive(self, data):
-        return self.r_search(data, self.root)
+    def recursive_search(self, data):
+        return self.wrapped_recursive_search(data, self.root)
 
     # BST's (wrapped) recursive insert function
-    def ins(self, data, subtree):
+    def wrapped_recursive_insert(self, data, subtree):
         if subtree is None:
             return BST.Node(data)
         elif data < subtree.data:
-            subtree.left = self.ins(data, subtree.left)
+            subtree.left = self.wrapped_recursive_insert(data, subtree.left)
         else:
-            subtree.right = self.ins(data, subtree.right)
+            subtree.right = self.wrapped_recursive_insert(data, subtree.right)
         return subtree
 
     # BST's (wrapper) recursive insert function
     def recursive_insert(self, data):
-        self.root = self.ins(data, self.root)
+        self.root = self.wrapped_recursive_insert(data, self.root)
 
     # BST's (wrapped) recursive print_inorder function
     def print_inorder(self, subtree):
@@ -185,11 +185,12 @@ class BST:
     # O(n) Solution:
     def not_efficient_inorder_successor(self, subtree, value):
         if subtree is not None:
+            print(subtree.data, end="->")
+
             result = self.not_efficient_inorder_successor(subtree.left, value)
             if result is not None:
                 return result
 
-            print(subtree.data, end="->")
             if subtree.data > value:
                 return subtree.data
 
@@ -223,18 +224,20 @@ class BST:
 
 bst = BST()
 # print(bst.root)
+
 # bst.insert(2)
 # bst.insert(1)
 # bst.insert(3)
 # print(bst.root.right.data)
 # print(bst.search(3).data)
 # bst.breadth_first_print()
-# print(bst.search_recursive(4))
+# print(bst.recursive_search(4))
+
 # bst.recursive_insert(3)
 # bst.recursive_insert(1)
 # bst.recursive_insert(2)
 # bst.breadth_first_print()
-# print(bst.search_recursive(3).data)
+# print(bst.recursive_search(3).data)
 # bst.print()
 
 # bst.print_between(1, 2)
@@ -242,7 +245,6 @@ bst = BST()
 # bst.print_between(1, 1)
 # bst.print_between(3, 3)
 # bst.print_between(2, 2)
-
 # print(bst.height())
 
 bst.recursive_insert(20)
