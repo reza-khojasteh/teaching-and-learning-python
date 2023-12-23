@@ -24,7 +24,7 @@ class BST:
             # curr points to the variable we are currently looking at
             curr = self.root
             inserted = False
-
+            # Keep looping until we find the right place to insert
             while not inserted:
                 if data < curr.data:
                     if curr.left is not None:
