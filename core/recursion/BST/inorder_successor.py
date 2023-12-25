@@ -18,8 +18,10 @@ class BST:
 
     # BST's insert function
     def insert(self, data):
+        # If the tree is empty, create a new node as the root
         if self.root is None:
             self.root = BST.Node(data)
+        # otherwise, find the right place to insert
         else:
             # curr points to the variable we are currently looking at
             curr = self.root
