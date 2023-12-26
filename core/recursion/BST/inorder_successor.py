@@ -28,12 +28,14 @@ class BST:
             inserted = False
             # Keep looping until we find the right place to insert
             while not inserted:
+                # If the data is smaller than the current node's data, go left
                 if data < curr.data:
                     if curr.left is not None:
                         curr = curr.left
                     else:
                         curr.left = BST.Node(data)
                         inserted = True
+                # otherwise, go right
                 else:
                     if curr.right is not None:
                         curr = curr.right
