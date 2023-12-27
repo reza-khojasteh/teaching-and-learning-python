@@ -76,8 +76,10 @@ class BST:
 
     # BST's (wrapped) recursive search function
     def wrapped_recursive_search(self, data, subtree):
+        # If the subtree is empty, return None
         if subtree is None:
             return None
+        # otherwise, recursively search the subtree
         else:
             if data < subtree.data:
                 return self.wrapped_recursive_search(data, subtree.left)
