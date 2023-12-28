@@ -94,6 +94,7 @@ class BST:
 
     # BST's (wrapped) recursive insert function
     def wrapped_recursive_insert(self, data, subtree):
+        # If the subtree is empty, create a new node as the subtree
         if subtree is None:
             return BST.Node(data)
         elif data < subtree.data:
