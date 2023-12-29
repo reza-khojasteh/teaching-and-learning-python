@@ -109,6 +109,7 @@ class BST:
 
     # BST's (wrapped) recursive print_inorder function
     def print_inorder(self, subtree):
+        # If the subtree is not empty, 
         if subtree is not None:
             self.print_inorder(subtree.left)
             print(subtree.data, end=" ")
