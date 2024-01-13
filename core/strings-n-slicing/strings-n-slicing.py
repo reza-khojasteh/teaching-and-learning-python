@@ -1,3 +1,7 @@
+"""
+This code demonstrates various string operations and slicing in Python.
+"""
+
 sample_string = "Hello World"
 
 # len() is a built-in function that returns the length of the string
@@ -62,7 +66,7 @@ print(sample_string[-11:100])
 print(sample_string[-100:100])
 # Prints Hello World
 
-print(sample_string[:len(sample_string)])
+print(sample_string[: len(sample_string)])
 # Prints Hello World
 
 print(sample_string[:])
