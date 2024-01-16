@@ -18,6 +18,8 @@ Prints 'Yellow' if mycolor is 'yellow'.
 
 case _:  
 Prints 'Any other color!' if mycolor does not match any other case.
+
+This construct was added in Python 3.10.
 """
 
 mycolor = "Yellow"
