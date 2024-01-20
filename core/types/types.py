@@ -1,3 +1,6 @@
+"""
+Domonstration of the different types in Python.
+"""
 print(type(None))
 # Prints <class 'NoneType'>
 
