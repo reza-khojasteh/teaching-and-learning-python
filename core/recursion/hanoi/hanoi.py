@@ -26,8 +26,11 @@ def hanoi(f, s, t, n):
         print(f"Move disk {n} from {f} to {t}")
         return
     # (else) recursive case
+    # move the top n - 1 disks on f to s (with the help of t)
     hanoi(f, t, s, n - 1)
+    # move the biggest disk from f to t
     print(f"Move disk {n} from {f} to {t}")
+    # move the same n - 1 disks from s to t (with the help of f)
     hanoi(s, f, t, n - 1)
 
 
