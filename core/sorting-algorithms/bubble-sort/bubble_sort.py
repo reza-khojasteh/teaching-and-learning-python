@@ -50,7 +50,7 @@ def bubble_sort(list):
     n = len(list)
     i = 0
     swapped = True
-
+    # As long as we have not reached the end of the list and the boolean 'swapped' is True, we keep iterating
     while i < n - 1 and swapped:
         swapped = False
 
