@@ -49,14 +49,17 @@
 def bubble_sort(list):
     n = len(list)
     i = 0
+    # set the swapped to True so that we can enter the while loop at least once
     swapped = True
-
+    # as long as we haven't done the n - 1 steps/iterations and the list is not yet sorted, enter the while loop and do another iteration
     while i < n - 1 and swapped:
+        # set the swapped to False so that we can exit the outer while loop if we don't do any swapping in this iteration
         swapped = False
-
+        # for each element in the list, compare it with the next element and swap them if they are in the wrong order
         for j in range(n - 1 - i):
             if list[j] > list[j + 1]:
                 list[j + 1], list[j] = list[j], list[j + 1]
+                # set the swapped back to True so that we still continue running the outer while loop
                 swapped = True
-
+        # do the next (potential) step/iteration of the outer while loop
         i += 1
