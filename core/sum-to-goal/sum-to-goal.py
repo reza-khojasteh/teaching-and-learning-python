@@ -1,5 +1,16 @@
 # A simple program to find the (first) two (distinct) numbers in a list that add up to a given goal number
 
+
+# # O(n^2) solution (wrong solution!)
+# def sum_to_goal(goal, list_of_numbers):
+#     for i in list_of_numbers:
+#         for j in list_of_numbers:
+#             if i + j == goal:
+#                 return i, j
+
+#     return -1
+
+
 # O(n^2) solution
 # def sum_to_goal(goal, list_of_numbers):
 #     n = len(list_of_numbers)
