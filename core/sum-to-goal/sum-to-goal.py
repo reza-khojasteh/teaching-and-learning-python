@@ -1,5 +1,5 @@
 # A simple program to find the (first) two (distinct) numbers in a list that add up to a given goal number
-
+# Author: Reza Khojasteh
 
 # # O(n^2) solution (wrong solution!)
 # def sum_to_goal(goal, list_of_numbers):
@@ -11,7 +11,29 @@
 #     return -1
 
 
-# O(n^2) solution
+# # O(n^2) solution (still wrong, be careful!)
+# def sum_to_goal(goal, list_of_numbers):
+#     for i in list_of_numbers:
+#         for j in list_of_numbers:
+#             if i + j == goal and list_of_numbers.index(i) != list_of_numbers.index(j):
+#                 return i, j
+
+#     return -1
+
+
+# # O(n^2) solution (and still wrong!)
+# def sum_to_goal(goal, list_of_numbers):
+#     n = len(list_of_numbers)
+
+#     for i in range(n):
+#         for j in range(n):
+#             if list_of_numbers[i] + list_of_numbers[j] == goal:
+#                 return list_of_numbers[i], list_of_numbers[j]
+
+#     return -1
+
+
+# O(n^2) solution (now, correct!)
 # def sum_to_goal(goal, list_of_numbers):
 #     n = len(list_of_numbers)
 
@@ -53,7 +75,7 @@
 #     return -1
 
 # Or even better (to save space in storing entries as we don't need to store indices here,
-# like in a case where we don't want to return the indices of those two numbers in the list):
+# like in a case where we don't want to return the index of those two numbers in the list):
 """
 The idea is to use a set to store the numbers we have seen so far.
 For each number, we check if the difference between the goal and the current number is in the set.
