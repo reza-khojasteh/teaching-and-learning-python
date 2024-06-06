@@ -13,6 +13,7 @@ Prints:
 Hello Reza
 """
 
+# Define the name to use in the greeting
 name = "Reza"
 formatted_1 = f"Hello {name}"
 print(formatted_1)
