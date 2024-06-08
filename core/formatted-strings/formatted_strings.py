@@ -21,6 +21,7 @@ print(formatted_1)
 
 # OR (the same result...)
 
+# Define a greeting string with a placeholder
 greet_format = "Hello {}"
 formatted_2 = greet_format.format(name)
 print(formatted_2)
