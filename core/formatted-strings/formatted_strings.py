@@ -23,5 +23,6 @@ print(formatted_1)
 
 # Define a greeting string with a placeholder
 greet_format = "Hello {}"
+# Use the .format() method to insert the name into the greeting string
 formatted_2 = greet_format.format(name)
 print(formatted_2)
