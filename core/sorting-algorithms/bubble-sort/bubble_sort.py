@@ -49,6 +49,7 @@
 def bubble_sort(list):
     # set the n to the length of the list
     n = len(list)
+    # i is playing the role of a counter which shows the number of passes/iterations we have done so far
     i = 0
     # set the swapped to True so that we can enter the while loop at least once
     swapped = True
