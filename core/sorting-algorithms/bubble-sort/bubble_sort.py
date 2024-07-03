@@ -60,6 +60,7 @@ def bubble_sort(list):
         # for each element in the list, compare it with the next element and swap them if they are in the wrong order
         # j goes from 0 to n - 2 - i, because in each pass, we will have one less element to compare with
         for j in range(n - 1 - i):
+            # if the current element is greater than the next element, swap them
             if list[j] > list[j + 1]:
                 list[j + 1], list[j] = list[j], list[j + 1]
                 # set the swapped back to True so that we still continue running the outer while loop
