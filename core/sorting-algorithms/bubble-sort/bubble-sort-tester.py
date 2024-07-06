@@ -12,6 +12,7 @@ from bubble_sort import bubble_sort
 
 
 class TestBubbleSort(unittest.TestCase):
+    # test cases for the empty list
     def test_empty_list(self):
         list = []
         bubble_sort(list)
