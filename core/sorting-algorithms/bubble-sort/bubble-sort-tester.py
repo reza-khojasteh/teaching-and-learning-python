@@ -24,6 +24,7 @@ class TestBubbleSort(unittest.TestCase):
         bubble_sort(list)
         self.assertEqual(list, [1])
 
+    # test cases for the two element list
     def test_two_element_list(self):
         list = [2, 1]
         bubble_sort(list)
