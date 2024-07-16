@@ -18,6 +18,7 @@ class TestBubbleSort(unittest.TestCase):
         bubble_sort(list)
         self.assertEqual(list, [])
 
+    # test cases for the one element list
     def test_one_element_list(self):
         list = [1]
         bubble_sort(list)
