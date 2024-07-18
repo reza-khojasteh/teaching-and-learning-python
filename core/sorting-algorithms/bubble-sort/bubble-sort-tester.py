@@ -30,6 +30,7 @@ class TestBubbleSort(unittest.TestCase):
         bubble_sort(list)
         self.assertEqual(list, [1, 2])
 
+    # test cases for the three element list
     def test_three_element_list(self):
         list = [3, 2, 1]
         bubble_sort(list)
