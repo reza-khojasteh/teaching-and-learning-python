@@ -36,6 +36,7 @@ class TestBubbleSort(unittest.TestCase):
         bubble_sort(list)
         self.assertEqual(list, [1, 2, 3])
 
+    # test cases for the list with duplicate elements
     def test_list_with_duplicate_elements(self):
         list = [1, 2, 3, 3, 2, 1]
         bubble_sort(list)
