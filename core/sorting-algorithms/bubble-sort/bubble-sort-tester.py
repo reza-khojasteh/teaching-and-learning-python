@@ -42,6 +42,7 @@ class TestBubbleSort(unittest.TestCase):
         bubble_sort(list)
         self.assertEqual(list, [1, 1, 2, 2, 3, 3])
 
+    # test cases for the list with negative elements
     def test_list_with_negative_elements(self):
         list = [-1, -2, -3, -4, -5]
         bubble_sort(list)
