@@ -48,6 +48,7 @@ class TestBubbleSort(unittest.TestCase):
         bubble_sort(list)
         self.assertEqual(list, [-5, -4, -3, -2, -1])
 
+    # test cases for the list with floating point numbers
     def test_list_with_floating_point_numbers(self):
         list = [1.1, 2.2, 3.3, 4.4, 5.5]
         bubble_sort(list)
