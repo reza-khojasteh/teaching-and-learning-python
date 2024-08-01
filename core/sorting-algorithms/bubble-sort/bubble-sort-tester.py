@@ -54,6 +54,7 @@ class TestBubbleSort(unittest.TestCase):
         bubble_sort(list)
         self.assertEqual(list, [1.1, 2.2, 3.3, 4.4, 5.5])
 
+    # test cases for the list with strings
     def test_list_with_strings(self):
         list = ["a", "b", "c", "d", "e"]
         bubble_sort(list)
