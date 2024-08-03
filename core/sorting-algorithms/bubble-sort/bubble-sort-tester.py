@@ -60,6 +60,7 @@ class TestBubbleSort(unittest.TestCase):
         bubble_sort(list)
         self.assertEqual(list, ["a", "b", "c", "d", "e"])
 
+    # test cases for the best case, when the array is already sorted
     def test_best_case(self):
         list = [1, 2, 3, 4, 5]
         bubble_sort(list)
