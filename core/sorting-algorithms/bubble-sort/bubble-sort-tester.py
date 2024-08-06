@@ -66,6 +66,7 @@ class TestBubbleSort(unittest.TestCase):
         bubble_sort(list)
         self.assertEqual(list, [1, 2, 3, 4, 5])
 
+    # test cases for the worst case, when the array is sorted in the reverse order
     def test_worst_case(self):
         list = [5, 4, 3, 2, 1]
         bubble_sort(list)
