@@ -72,6 +72,7 @@ class TestBubbleSort(unittest.TestCase):
         bubble_sort(list)
         self.assertEqual(list, [1, 2, 3, 4, 5])
 
+    # test cases for the average case, when the array is sorted in the random order
     def test_average_case(self):
         list = [3, 5, 1, 2, 4]
         bubble_sort(list)
