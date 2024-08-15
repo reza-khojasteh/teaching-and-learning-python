@@ -79,6 +79,6 @@ class TestBubbleSort(unittest.TestCase):
         self.assertEqual(list, [1, 2, 3, 4, 5])
 
 
-# run the unit test if the file is executed directly
+# run the unit test if the file is executed directly (not imported as a module)
 if __name__ == "__main__":
     unittest.main()
