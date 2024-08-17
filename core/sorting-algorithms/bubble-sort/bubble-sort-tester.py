@@ -81,4 +81,5 @@ class TestBubbleSort(unittest.TestCase):
 
 # run the unit test if the file is executed directly (not imported as a module)
 if __name__ == "__main__":
+    # run the unit test
     unittest.main()
