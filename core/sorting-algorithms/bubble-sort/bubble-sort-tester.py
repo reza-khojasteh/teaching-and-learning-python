@@ -11,6 +11,7 @@ import unittest
 from bubble_sort import bubble_sort
 
 
+# a class to test the bubble sort algorithm
 class TestBubbleSort(unittest.TestCase):
     # test cases for the empty list
     def test_empty_list(self):
