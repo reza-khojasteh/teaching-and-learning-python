@@ -11,6 +11,7 @@ import unittest
 from insertion_sort import insertion_sort
 
 
+# a class to test the insertion sort algorithm
 class TestInsertionSort(unittest.TestCase):
     def test_empty_list(self):
         list = []
