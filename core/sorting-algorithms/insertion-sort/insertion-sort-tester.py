@@ -13,6 +13,7 @@ from insertion_sort import insertion_sort
 
 # a class to test the insertion sort algorithm
 class TestInsertionSort(unittest.TestCase):
+    # a test case for the empty list
     def test_empty_list(self):
         list = []
         insertion_sort(list)
